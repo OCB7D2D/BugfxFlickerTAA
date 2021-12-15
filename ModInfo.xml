@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="BugfxFlickerTAA" />
+		<Description value="TAA Flicker fix (ported code from Egor179)" />
+		<Website value="https://github.com/OCB7D2D/BugfxFlickerTAA" />
+		<Author value="Egor179,ocbMaurice" />
+		<Version value="0.1.0" compat="A20"/>
+	</ModInfo>
+</xml>
