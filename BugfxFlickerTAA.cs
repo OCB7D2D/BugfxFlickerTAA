@@ -31,10 +31,6 @@ public class BugfxFlickerTAA : IModApi
                 mainLayer.temporalAntialiasing.motionBlending = 0.85f;
                 mainLayer.temporalAntialiasing.sharpness = sharpness;
                 weaponLayer.antialiasingMode = PostProcessLayer.Antialiasing.None;
-                weaponLayer.temporalAntialiasing.jitterSpread = 0.75f;
-                weaponLayer.temporalAntialiasing.stationaryBlending = 0.95f;
-                weaponLayer.temporalAntialiasing.motionBlending = 0.85f;
-                weaponLayer.temporalAntialiasing.sharpness = sharpness;
                 return false;
             }
             return true;
