@@ -47,4 +47,16 @@ public class BugfxFlickerTAA : IModApi
             return false;
         }
     }
+
+    [HarmonyPatch(typeof(GameOptionsManager))]
+    [HarmonyPatch("GetTextureFilter")]
+    public class GameOptionsManager_GetTextureFilter
+    {
+        public static void Postfix(ref int __result)
+        {
+            // Ignore memory constraint and just use what is set by user
+            __result = GamePrefs.GetInt(EnumGamePrefs.OptionsGfxTexFilter);
+        }
+    }
+
 }
